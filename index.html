@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ThinkX NEET/JEE Book Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 ThinkX Book Marketplace for NEET & JEE Aspirants</h1>
+    <p>✨ No commission. Direct contact with the seller. Only NEET and JEE books.</p>
+
+    <form id="book-form">
+      <input type="text" id="book-name" placeholder="Book Name" required />
+      <input type="text" id="book-image" placeholder="Image URL" required />
+      <input type="text" id="book-location" placeholder="Location (City)" required />
+      <input type="text" id="book-contact" placeholder="Contact (Phone/Email)" required />
+      <button type="submit">Upload Book</button>
+    </form>
+
+    <!-- ✅ Add this div exactly as below -->
+    <div id="books-container" class="books-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
