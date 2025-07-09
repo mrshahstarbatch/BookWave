@@ -41,7 +41,7 @@ document.getElementById('book-form').addEventListener('submit', async (e) => {
 
     if (res.ok) {
       alert('✅ Book uploaded!');
-      loadBooks();
+      loadBooks(); // Reload book list
     } else {
       alert('❌ Error uploading book: ' + data.message);
     }
