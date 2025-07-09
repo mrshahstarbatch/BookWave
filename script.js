@@ -1,6 +1,6 @@
 async function loadBooks() {
   try {
-    const res = await fetch('http://localhost:5000/api/books');
+    const res = await fetch('https://book-market-backend.onrender.com/api/books');
     const books = await res.json();
     const booksContainer = document.getElementById('books-container');
     booksContainer.innerHTML = '';
@@ -31,7 +31,7 @@ document.getElementById('book-form').addEventListener('submit', async (e) => {
   const contact = document.getElementById('book-contact').value;
 
   try {
-    const res = await fetch('http://localhost:5000/api/books', {
+    const res = await fetch('https://book-market-backend.onrender.com/api/books', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, imageUrl, location, contact })
